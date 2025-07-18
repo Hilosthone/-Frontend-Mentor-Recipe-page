@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+section {
+    font-family: 'Outfit', sans-serif;
+    justify-content: center;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+    padding: 2.9rem;
+    max-width: 600px;
+    gap: 2.5rem;
+}
+
+img{
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.recipe-name{
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.prep{
+    margin-top: 10px;
+    background-color: hsl(28, 63%, 95%);
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.prep-time{
+    font-weight: 700;
+    color: hsl(332, 51%, 32%);
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.prep-time-list {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+}
+
+ul.prep-time-list li {
+    margin: 5px 25px;
+    font-weight: 400;
+    color: hsl(28, 63%, 32%);
+}
+
+.strong {
+    font-weight: 700;
+    font-size: large;
+    color: hsl(28, 63%, 32%);
+}
+
+.Ingredients{
+    font-weight: 700;
+    font-size: 2.0rem;
+    color: hsl(28, 63%, 32%);
+    margin: 15px;
+    width: 100%;
+}
+.Ingredients-list {
+    margin-left: 15px;
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+}
+
+ul.Ingredients-list li {
+    margin: 5px 25px;
+    font-weight: 400;
+    color: hsl(28, 63%, 32%);
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.instruction-sec{
+    font-weight: 400;
+    color: hsl(27, 27%, 41%);
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.Instructions {
+    font-weight: 700;
+    font-size: 2.0rem;
+    color: hsl(28, 63%, 32%);
+    margin: 15px;
+    width: 100%;
+}
+
+.nutrition{
+    font-weight: 700;
+    font-size: 2.0rem;
+    color: hsl(28, 63%, 32%);
+    margin: 15px;
+    width: 100%;
+}
+
+.nutrition-description{
+    font-weight: 400;
+    color: hsl(27, 27%, 41%);
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+table{
+    width: 100%;
+    margin: 20px 0;
+    font-weight: bold;
+    color: hsl(28, 63%, 32%);
+}
+
+td{
+    padding: 10px;
+    border-bottom: 1px solid hsl(28, 63%, 32%);
+    text-align: left;
+}
+
+@media (min-width: 1440px) {
+    section {
+        max-width: 650px;
+        padding: 3rem;
+    }
+
+    .recipe-name {
+        font-size: 2.5rem;
+    }
+
+    .prep-time {
+        font-size: 1.2rem;
+    }
+
+    .Ingredients, .Instructions, .nutrition {
+        font-size: 2.0rem;
+    }
+
+    ul.Ingredients-list li, ul.prep-time-list li {
+        font-size: 1.2rem;
+    }
+}  
+
