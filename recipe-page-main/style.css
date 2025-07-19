@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,11 +9,10 @@ body {
     display: grid;
     place-items: center;
     min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
 }
 
 section {
-    font-family: 'Outfit', sans-serif;
-    justify-content: center;
     background-color: hsl(330, 100%, 98%);
     border-radius: 20px;
     padding: 2.9rem;
@@ -31,33 +31,33 @@ img{
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 10px;
-    width: auto;
-}j
+}
 
 .prep{
     margin-top: 10px;
     background-color: hsl(28, 63%, 95%);
     border-radius: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    width: 100%;
 }
 
 .prep-time{
     font-weight: 700;
     color: hsl(332, 51%, 32%);
     font-size: 1rem;
-    margin: 10px;
+    margin: 0.5rem;
 }
 
 .prep-time-list {
     list-style-type: disc;
-    padding: 0;
-    margin: 0;
+    margin-left: 1.5rem;
+    color: hsl(28, 63%, 32%);
 }
 
 ul.prep-time-list li {
-    margin: 5px 25px;
+    margin: 5px 0;
     font-weight: 400;
-    color: hsl(28, 63%, 32%);
 }
 
 .strong {
@@ -74,16 +74,15 @@ ul.prep-time-list li {
     width: 100%;
 }
 .Ingredients-list {
-    margin-left: 15px;
+    margin-left: 1.5rem;
     list-style-type: disc;
-    padding: 0;
-    margin: 0;
+    color: hsl(28, 63%, 32%);
+    font-size: 1.2rem;
 }
 
 ul.Ingredients-list li {
-    margin: 5px 25px;
+    margin: 5px 0;
     font-weight: 400;
-    color: hsl(28, 63%, 32%);
     font-size: 1.2rem;
     width: 100%;
 }
@@ -92,14 +91,14 @@ ul.Ingredients-list li {
     font-weight: 400;
     color: hsl(27, 27%, 41%);
     font-size: 1.2rem;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .Instructions {
     font-weight: 700;
     font-size: 2.0rem;
     color: hsl(28, 63%, 32%);
-    margin: 15px;
+    margin: 15px 0;
     width: 100%;
 }
 
@@ -115,7 +114,7 @@ ul.Ingredients-list li {
     font-weight: 400;
     color: hsl(27, 27%, 41%);
     font-size: 1.2rem;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 table{
@@ -123,6 +122,7 @@ table{
     margin: 20px 0;
     font-weight: bold;
     color: hsl(28, 63%, 32%);
+    border-collapse: collapse;
 }
 
 td{
@@ -142,7 +142,7 @@ td{
   .recipe-name {
     font-size: 2.32rem;
     text-align: left;
-    font-weight: 550;
+    font-weight: 600;
   }
 
   .Ingredients,
