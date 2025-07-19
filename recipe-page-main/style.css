@@ -14,14 +14,14 @@ section {
     font-family: 'Outfit', sans-serif;
     justify-content: center;
     background-color: hsl(330, 100%, 98%);
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 2.9rem;
     max-width: 600px;
     gap: 2.5rem;
 }
 
 img{
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
     margin-bottom: 10px;
 }
@@ -32,7 +32,7 @@ img{
     font-size: 2rem;
     margin-bottom: 10px;
     width: auto;
-}
+}j
 
 .prep{
     margin-top: 10px;
@@ -131,26 +131,44 @@ td{
     text-align: left;
 }
 
-@media (min-width: 1440px) {
-    section {
-        max-width: 650px;
-        padding: 3rem;
-    }
+@media (max-width: 600px) {
+  section {
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 100%;
+    border-radius: 15px;
+  }
 
-    .recipe-name {
-        font-size: 2.5rem;
-    }
+  .recipe-name {
+    font-size: 2.32rem;
+    text-align: left;
+    font-weight: 550;
+  }
 
-    .prep-time {
-        font-size: 1.2rem;
-    }
+  .Ingredients,
+  .Instructions,
+  .nutrition,
+  .prep-time {
+    font-size: 1.25rem;
+    text-align: left;
+  }
 
-    .Ingredients, .Instructions, .nutrition {
-        font-size: 2.0rem;
-    }
+  .instruction-list,
+  .Ingredients-list,
+  .prep-time-list {
+    margin-left: 1.25rem;
+    padding-left: 1rem;
+  }
 
-    ul.Ingredients-list li, ul.prep-time-list li {
-        font-size: 1.2rem;
-    }
-}  
+  .instruction-sec,
+  .nutrition-sect,
+  .ingrediation-sect,
+  .prep {
+    margin-bottom: 1.5rem;
+  }
 
+  table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
